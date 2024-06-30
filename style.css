@@ -208,6 +208,14 @@ body {
 .item:nth-child(7) .wimg {
   background-color: rgb(241, 199, 91);
 }
+
+.wc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
 @media (min-width: 481px) and (max-width: 992px) {
   .content {
     grid-template-columns: repeat(2, 1fr);
@@ -220,7 +228,6 @@ body {
   }
 }
 
-/* Celulares */
 @media (max-width: 480px) {
   .content {
     grid-template-columns: 1fr;
@@ -230,5 +237,54 @@ body {
   .item:nth-child(odd) {
     grid-column: auto;
     grid-row: auto;
+  }
+  .wc {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .time {
+    font-weight: 300;
+    width: 30%;
+    font-size: 2rem;
+    align-content: center;
+  }
+  .lw {
+    width: 70%;
+    text-align: right;
+    align-content: center;
+  }
+  .idreport {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .idtext {
+    flex-direction: column;
+  }
+  .idtext p {
+    font-size: 1rem;
+  }
+  .perfil {
+    display: flex;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: wheat;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+  }
+
+  .lista ol {
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .lista {
+    justify-content: center;
   }
 }
